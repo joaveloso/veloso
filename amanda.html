@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>construção de site</title>
+<link rel="stylesheet" type="text/css"href="teste5.css">
+<link rel="stylesheet" type="text/css"href="teste6.css">
+<link rel="stylesheet" type="text/css"href="testando3.css">
+<link rel="stylesheet" type="text/css"href="frame.css">
+<link rel="stylesheet" type="text/css"href="teste3.css">
+<link rel="stylesheet" type="text/css"href="teste4.css"
+<link rel="stylesheet" type="text/css"href="foto.css">
+</head>
+<article>
+<section id="conteudo">
+<img src="aug.jpg" usemap="#meumapa"/>
+<map name="meumapa">
+<area shape="rect" coords="48,130,73,198" href="home.html#tela"target="janela"/>
+</map>
+<iframe src="home.html"name="janela" id="frame-jose"></iframe>
+</section>
+</article>
+<script>
+function mudaFoto (casa)
+{
+document.getElementById("icone").src = casa;
+}
+</script>
+<body>
+<div id="interface">
+<header id="cabecalho">
+<hgroup>
+<img id="icone"src="Suporte-icone-preto.png"width="250"height="150">
+<h3>augusto</h3>
+<h4>corinthians campeão</h4>
+<h2>este é o site que estou fazendo</h2>
+</article>
+</header>
+</hgroup>
+<table id="tabelaspec">
+<caption>tabela técnica augusto <span>agosto/2020</span></caption>
+<tr><td class="ce">jose augusto</td><td class="cd">cachorro tenho 2</td></tr>
+<tr><td rowspan="2"class="ce">carro</td><td class="cd">uno</td></tr>
+<tr><td class="cd">corsa</td></tr>
+<tr><td rowspan="2"class="ce">amanda</td><td class="cd">boneca</td></tr>
+<tr><td class="cd">bicicleta</td></tr>
+<tr><td class="ce">dominique</td><td class="cd">gato</td></tr>
+</table>
+<h2 align="center">veloso</h2>
+<figure class="foto-legenda">
+<img src="amanda.jpg" width="200" height="300">
+<figcaption>
+<h3>legenda na imagem</h3>
+<p>usando o figcaption coloca na imagem.</p>
+</figcaption>
+</figure>
+<table align="center">
+<th>formulario</th>
+<tr>
+<td>nome</td>
+<td><input type=text name=nome size=25>
+</tr>
+<td>telefone</td>
+<td><input type=text name=telefone size=25>
+</tr>
+<td>profissão</td>
+<td><input type=text name=profissão size=25>
+</tr>
+<td>estado civil:</td>
+<td>solteiro<input type=radio name=estcivil>
+casado<input type=radio name=estcivil>
+divorciado<input type=radio name=estcivil>
+</tr>
+<td><input type="reset" value="limpar">
+<td><input type="submit"value="enviar"><br>
+</table>
+<form>
+<h3>qual cor voce prefere</h3>
+<input type="checkbox"name="azul"value="azul"/>azul<br>
+<input type="checkbox"name="amarelo"value="amarelo"/>amarelo<br>
+<input type="submit"value="enviar"><br>
+nome completo:<imput type=text name=nome completo><br>
+estado:<select name=estado>
+<option>bahia
+<option>parana
+<option>santa catarina
+</select>
+senha:<input type=password name=senha><br>
+<textarea name ="comentarios"rows="10"cols="50">coloque seu comentário
+</textarea>
+</form>
+</header>
+</hgroup>
+<figure class="foto-legenda">
+<img src="Slogan.JPG"width="900" height="200">
+<figcaption>oi</figcaption>
+</figure>
+<nav>
+<ol>
+<li onmouseover="mudaFoto('casa.jpg')"onmouseout="mudaFoto('augusto.png')"><a href="home.html">home</a></li>
+<li onmouseover="mudaFoto('augusto.png')"onmouseout="mudaFoto('augusto.png')"><a href="amanda.html">amanda</a></li>
+<li onmouseover="mudaFoto('camera.jpg')"onmouseout="mudaFoto('augusto.png')"><a href="dominique.html">dominique</a></li>
+<li onmouseover="mudaFoto('faleconosco.png')"onmouseout="mudaFoto('augusto.png')"><a href="augusto.html">augusto</a></li>
+<li onmouseover="mudaFoto('fotos.jpg')"onmouseout="mudaFoto('augusto.png')"><a href="foto.html">foto</a></li>
+</ol>
+</nav>
+<section id="corpo">
+<article id="noticia-principal">
+<header id="cabecalho-artigo">
+<hgroup>
+<h1>Tecnologia>Inovações</h1>
+<h4>sabendo tudo sobre site</h4>
+<h2>por Gustavo Guanabara</h2>
+<h3 class="direita">Atualizado em 08/agosto/2020</h3>
+</hgroup>
+</header>
+</head>
+</html>
