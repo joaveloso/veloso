@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<link rel="stylesheet" type="text/css"href="teste5.css">
+<link rel="stylesheet" type="text/css"href="teste6.css">
+<link rel="stylesheet" type="text/css"href="testando3.css">
+<link rel="stylesheet" type="text/css"href="frame.css">
+<link rel="stylesheet" type="text/css"href="teste3.css">
+<link rel="stylesheet" type="text/css"href="teste4.css"
+<link rel="stylesheet" type="text/css"href="foto.css">
+<title>Teste JavaScript</title>
+<script>
+function mudaFoto (casa)
+{
+document.getElementById("icone").src = casa;
+}
+var quebrada = false;
+function mudaLampada(tipo) {
+if (!quebrada) {
+document.getElementById("luz").src = " " + tipo +".jpg";
+if (tipo == 'lampada quebra') {
+quebrada = true;
+}
+}
+}
+</script>
+<body bgcolor="#dddddd">
+<img id="icone"src="Suporte-icone-preto.png"width="250"height="150">
+<nav align="left">
+<ol>
+<li onmouseover="mudaFoto('casa.jpg')"onmouseout="mudaFoto('faleconosco.png')"><a href="index.html">home</a></li>
+<li onmouseover="mudaFoto('augusto.png')"onmouseout="mudaFoto('faleconosco.png')"><a href="amanda.html">amanda</a></li>
+<li onmouseover="mudaFoto('camera.jpg')"onmouseout="mudaFoto('faleconosco.png')"><a href="dominique.html">dominique</a></li>
+<li onmouseover="mudaFoto('faleconosco.png')"onmouseout="mudaFoto('faleconosco.png')"><a href="augusto.html">augusto</a></li>
+<li onmouseover="mudaFoto('fotos.jpg')"onmouseout="mudaFoto('faleconosco.png')"><a href="foto.html">foto</a></li>
+</ol>
+</nav>
+<h1>Acenda a Lampada</h1>
+<img src="lampada apagada.jpg" id="luz" onmousemove="mudaLampada('lampada acesa')"onmouseout="mudaLampada('lampada apagada')" onclick="mudaLampada('lampada quebra')"/>
+</head>
+</body>
+</html>
