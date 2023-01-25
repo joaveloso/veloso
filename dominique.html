@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<link rel="stylesheet" type="text/css"href="teste5.css">
+<link rel="stylesheet" type="text/css"href="teste6.css">
+<link rel="stylesheet" type="text/css"href="testando3.css">
+<link rel="stylesheet" type="text/css"href="frame.css">
+<link rel="stylesheet" type="text/css"href="teste3.css">
+<link rel="stylesheet" type="text/css"href="teste4.css">
+<link rel="stylesheet" type="text/css"href="media.css">
+<link rel="stylesheet" type="text/css"href="foto.css">
+<script>
+function mudaFoto (casa)
+{
+document.getElementById("icone").src = casa;
+}
+</script>
+<img id="icone"src="Suporte-icone-preto.png"width="250"height="150">
+<h1>tabelas<h1>
+</head>
+<body bgcolor="#dddddd">
+<nav align="left">
+<ol>
+<li onmouseover="mudaFoto('casa.jpg')"onmouseout="mudaFoto('camera.jpg')"><a href="site testa menu15.html">home</a></li>
+<li onmouseover="mudaFoto('augusto.png')"onmouseout="mudaFoto('camera.jpg')"><a href="teste13.html">amanda</a></li>
+<li onmouseover="mudaFoto('camera.jpg')"onmouseout="mudaFoto('camera.jpg')"><a href="tabela10.html">dominique</a></li>
+<li onmouseover="mudaFoto('faleconosco.png')"onmouseout="mudaFoto('camera.jpg')"><a href="lampadamenu4.html">augusto</a></li>
+<li onmouseover="mudaFoto('fotos.jpg')"onmouseout="mudaFoto('camera.jpg')"><a href="mapeamento2.html">foto</a></li>
+</ol>
+</nav>
+<table align="center" border=10 bgcolor="green">
+<caption align=top>familia</caption>
+<th>
+<tr>
+<td bgcolor="blue">jose,cachorro</td>
+<td bgcolor="red">augusto,carro</td>
+<td bgcolor="yellow">amanda,boneca</td>
+<td bgcolor="#dddddd">dominique,gato</td>
+</tr>
+<tr>
+<td>36</td>
+<td>4</td>
+<td>7</td>
+<td>34</td>
+</tr>
+<tr>
+<td>azul</td>
+<td>verde</td>
+<td>amarelo</td>
+<td>vermelho</td>
+</tr>
+</th>
+</table>
+<div id="tv-radio">
+<audio id="musica"controls="controls">
+<source src="musica.mp3" type="audio/mpeg"/>
+<source src="musica.m4a" type="audio/x-aac"/>
+<source src="musica.ogg" type="audio/ogg"/>
+Descupe, mas nao foi possivel carregar o audio.
+</audio>
+<video id="filme" controls="controls" poster="mini-video.jpg">
+<source src="C:/Users/jose/Desktop/aula gusta guanabara/video 1.mp4" type="video/mp4"/>
+<source src="C:/Users/jose/Desktop/aula gusta guanabara/video 2.webm" type="video/webm"/>
+<source src="C:/Users/jose/Desktop/aula gusta guanabara/video 3.ogg" type="video/ogg"/>
+Desculpe, mas nao foi possivel carregar o video.
+</video>
+</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MuKmRuXh1Gs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+<html>
