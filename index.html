@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<title>construção de site</title>
+<link rel="stylesheet" type="text/css"href="teste5.css">
+<link rel="stylesheet" type="text/css"href="teste6.css">
+<link rel="stylesheet" type="text/css"href="testando3.css">
+<link rel="stylesheet" type="text/css"href="frame.css">
+<link rel="stylesheet" type="text/css"href="teste3.css">
+<link rel="stylesheet" type="text/css"href="teste4.css">
+<link rel="stylesheet" type="text/css"href="foto.css">
+<link rel="stylesheet" type="text/css"href="form.css">
+<link href="https://joaveloso.github.io/veloso/style.css" rel="stylesheet"/>
+
+<script language="javascript" src="_javascript/funções.js"></script>
+<script>
+function calc_total() {
+var qtd = parseInt(document.getElementById('cQtd').value);
+tot= qtd * 1500;
+document.getElementById('cTot').value = tot;
+}
+</script>
+</head>
+<img src="indica.jpg"width="200" height="200"/>
+<script>
+function mudaFoto (casa)
+{
+document.getElementById("icone").src = casa;
+}
+</script>
+<body>
+<div id="interface">
+<header id="cabecalho">
+<hgroup>
+<img id="icone"src="Suporte-icone-preto.png"width="250"height="150">
+<h3>augusto</h3>
+<h4>corinthians campeão</h4>
+<h2>este é o site que estou fazendo</h2>
+</header>
+</hgroup>
+<table id="tabelaspec">
+<caption>tabela técnica augusto <span>agosto/2020</span></caption>
+<tr><td class="ce">jose augusto</td><td class="cd">cachorro tenho 2</td></tr>
+<tr><td rowspan="2"class="ce">carro</td><td class="cd">uno</td></tr>
+<tr><td class="cd">corsa</td></tr>
+<tr><td rowspan="2"class="ce">amanda</td><td class="cd">boneca</td></tr>
+<tr><td class="cd">bicicleta</td></tr>
+<tr><td class="ce">dominique</td><td class="cd">gato</td></tr>
+</table>
+<h2 align="center">veloso</h2>
+<figure class="foto-legenda">
+<img src="amanda.jpg" width="200" height="300">
+<figcaption>
+<h3>legenda na imagem</h3>
+<p>usando o figcaption coloca na imagem.</p>
+</figcaption>
+</figure>
+<table align="center">
+<th>formulario</th>
+<tr>
+<td>nome</td>
+<td><input type=text name=nome size=25>
+</tr>
+<td>telefone</td>
+<td><input type=text name=telefone size=25>
+</tr>
+<td>profissão</td>
+<td><input type=text name=profissão size=25>
+</tr>
+<td>estado civil:</td>
+<td>solteiro<input type=radio name=estcivil>
+casado<input type=radio name=estcivil>
+divorciado<input type=radio name=estcivil>
+</tr>
+<td><input type="reset" value="limpar">
+<td><input type="submit"value="enviar"><br>
+</table>
+<form>
+<h3>qual cor voce prefere</h3>
+<input type="checkbox"name="azul"value="azul"/>azul<br>
+<input type="checkbox"name="amarelo"value="amarelo"/>amarelo<br>
+<input type="submit"value="enviar"><br>
+nome completo:<imput type=text name=nome completo><br>
+estado:<select name=estado>
+<option>bahia
+<option>parana
+<option>santa catarina
+</select>
+senha:<input type=password name=senha><br>
+<textarea name ="comentarios"rows="10"cols="50">coloque seu comentário
+</textarea>
+<form method="post" id="fContato"action="mailto:contato@cursoemvideo.com"oninput="calc_total();">
+<fieldset id="usuario"><legend>Identificação do Usuário</legend>
+<p><label for="cNome">Nome:</label>
+<input type="text" name="tNome" id="cNome" size="20"maxlength="30" placeholder="Nome Completo"</p>
+<p><label for="cSenha">Senha:</label>
+<input type="password"name="tSenha" id="cSenha" size="8" maxlength="8"placeholder="8 digitos"</p>
+<p><label for="cMail">E-mail:</label>
+<input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></p>
+<fieldset id="sexo"><legend>Sexo</legend>
+<input type="radio" name="tSexo" id="cMasc"checked/><label for="cMasc">Masculino</label></br>
+<input type="radio" name="tSexo" id="cFem"/><label for="cFem">Feminino</labe></fieldset>
+<p><label for="cNasc">Data de Nascimento:</label>
+<input type="date" name="tNasc" id="cNasc"/></p>
+</fieldset>
+<fieldset id="endereco"><legend>Endereço do Usuário</legend>
+<p><label for="cRua">Logradouro:</label>
+<input type="text" name="tRua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, Trav,..."/></p>
+<p><label for="cNum">Número: </label>
+<input type="number"name="tNum" id="cNum" min="0" max="99999"/></p>
+<p><label for="cEst">Estado:</label>
+<select name="tEst" id="cEst">
+<optgroup label="Região Sudeste">
+<option value="RJ">Rio de Janeiro</option>
+<option value="SP">São Paulo</option>
+<option value="MG">Minas Gerais</option>
+</optgroup>
+<optgroup label="Região Sul"><option value="PR">Parana</option>
+<option value="SC">Santa Catarina</option>
+<option value="RS">Rio Grande do Sul</option>
+</optgroup>
+</select></p>
+<p><label for="cCid">Cidade:</label>
+<input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade"list="cidades"/></p>
+<datalist id="cidades">
+<option value="Rio de Janeiro"></option>
+<option value="Nova Iguaçu"></option>
+<option value="Niterói"></option>
+<option value="Belford Roxo"></option>
+</datalist>
+</fieldset>
+<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+<p><label= for="cUrg">Grau de Urgência:</label></p>
+Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/>Máx"</p>
+<p><label for="cMsg">Mensagem:</label>
+<textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea></p>
+</fieldset>
+<fieldset id="pedido"><legend>Quero um carro 0km</legend>
+<p><input type="checkbox" name="tPed" id="cPed" checked/>
+<label for="cPed">Gostaria de adquirir um carro 0km quando disponivel</label></p>
+<p><label for="cCor">Cor:</label>
+<input type="color" name="tCor" value="#0000ff"/></p>
+<p><label for="cQtd">Quantidade:</label>
+<input type="number"name="tQtd" id="cQtd" min="0" max="5" value="0"/></p>
+<p><label for="cTot">Preço Total: R$</label>
+<input type="text"name="tTot" id="cTot" placeholder="Total a Pagar"readonly/></p>
+</fieldset>
+<input type="submit" value="Enviar"/>
+<input type="image" name="tEnviar" src="enviar.png"/>
+</form>
+</header>
+</hgroup>
+<figure class="foto-legenda">
+<img src="Slogan.JPG"width="900" height="200">
+<figcaption>oi</figcaption>
+</figure>
+<nav>
+<ol>
+<li onmouseover="mudaFoto('casa.jpg')"onmouseout="mudaFoto('casa.jpg')"><a href="home.html">home</a></li>
+<li onmouseover="mudaFoto('augusto.png')"onmouseout="mudaFoto('casa.jpg')"><a href="amanda.html">amanda</a></li>
+<li onmouseover="mudaFoto('camera.jpg')"onmouseout="mudaFoto('casa.jpg')"><a href="dominique.html">dominique</a></li>
+<li onmouseover="mudaFoto('faleconosco.png')"onmouseout="mudaFoto('casa.jpg')"><a href="augusto.html">augusto</a></li>
+<li onmouseover="mudaFoto('fotos.jpg')"onmouseout="mudaFoto('casa.jpg')"><a href="foto">foto</a></li>
+</ol>
+</nav>
+<section id="corpo">
+<article id="noticia-principal">
+<header id="cabecalho-artigo">
+<hgroup>
+<h1>Tecnologia>Inovações</h1>
+<h4>sabendo tudo sobre site</h4>
+<h2>por Gustavo Guanabara</h2>
+<h3 class="direita">Atualizado em 08/agosto/2020</h3>
+</hgroup>
+</header>
+</article>
+</section>
+<aside id="lateral">
+</hgroup>
+<embed src="Osni.mp4"width="220"height="100">
+<h2>treinando site</h2>
+<p>Percebe-se que a deficiência física incide na falha das funções motoras e,
+na maior parte das vezes, a inteligência fica preservada. Assim, a parte cognitiva
+do cérebro poderá funcionar normalmente, na sua plenitude, assegurando que a
+pessoa com deficiência física tenha plenas condições de aprender e/ou socializar-se.</p>
+<p>Para que o aluno com deficiência física possa ter acesso à educação
+escolarizada, como também participar no contexto em que ele convive, é
+importante proporcionar condições adequadas ao seu deslocamento</p>
+<h1>finalizando o site </h1>
+</aside>
+<footer id="rodape">
+<p>Copyright &copy; 2013 - by José Augusto</br>
+<a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a>
+<a href="http://twitter.com/cursosemvideo" target="_blank">Twitter </a></p>
+</footer>
+</div>
+</body>
+</html>
