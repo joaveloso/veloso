@@ -1,0 +1,30 @@
+<html>
+nav {
+display:block;
+}
+nav ol{
+list-style:none;
+text-transform:uppercase;
+position:absolute;
+top:-10px;
+left: 700px;
+}
+nav li{
+display:inline-block;
+background-color:white;
+padding:5px;
+margin:0px;
+transition:background-color 1s;
+}
+nav li:hover{
+background-color:yellow;
+}
+nav li a:hover{
+color:green;
+color:red;
+text-decoration:none;
+}
+nav a {
+text-decoration:none;
+}
+}
